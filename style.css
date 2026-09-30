@@ -33,7 +33,12 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(900px 520px at 20% 0%, rgba(227, 64, 42, 0.08), transparent 60%),
+    radial-gradient(700px 500px at 100% 30%, rgba(227, 64, 42, 0.05), transparent 55%),
+    radial-gradient(800px 600px at 5% 70%, rgba(227, 64, 42, 0.05), transparent 55%),
+    radial-gradient(700px 500px at 95% 95%, rgba(227, 64, 42, 0.06), transparent 55%),
+    var(--bg);
   color: var(--text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -175,9 +180,6 @@ h1, h2, h3 {
 .hero {
   padding: 96px 0 40px;
   text-align: center;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(227, 64, 42, 0.08), transparent 60%),
-    var(--bg);
   overflow: hidden;
 }
 
@@ -266,68 +268,10 @@ h1, h2, h3 {
   .strip-track { animation: none; }
 }
 
-/* Numbers */
-
-.numbers {
-  padding: 48px 0;
-}
-
-.numbers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  text-align: center;
-}
-
-.number {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.number-value {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.number-label {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-/* Quote */
-
-.quote-section {
-  padding: 40px 0 88px;
-}
-
-.quote {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
-  font-weight: 500;
-  line-height: 1.45;
-  max-width: 780px;
-  margin: 0 auto 16px;
-  text-align: center;
-}
-
-.quote-attr {
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  margin: 0;
-}
-
 /* Sections */
 
 .section {
   padding: 80px 0;
-}
-
-.section.alt {
-  background: var(--bg-alt);
 }
 
 .section-label {
@@ -726,7 +670,6 @@ h1, h2, h3 {
 /* CTA */
 
 .cta {
-  background: var(--bg-alt);
   text-align: center;
 }
 
@@ -771,7 +714,6 @@ h1, h2, h3 {
   .network-grid {
     grid-template-columns: 1fr;
   }
-  .numbers-grid { grid-template-columns: 1fr; gap: 20px; }
   .founder-photo { max-width: 280px; margin: 0 auto; }
 }
 

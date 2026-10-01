@@ -306,9 +306,6 @@ h1, h2, h3 {
 }
 
 .section-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.95rem;
@@ -317,13 +314,11 @@ h1, h2, h3 {
   margin: 0 0 16px;
 }
 
-.section-label::before {
-  content: "";
-  display: inline-block;
-  width: 26px;
+.section-divider {
+  width: 44px;
   height: 2px;
   background: var(--accent);
-  flex-shrink: 0;
+  margin: 0 auto 48px;
 }
 
 .how h2 {
@@ -427,13 +422,24 @@ h1, h2, h3 {
 }
 
 .why-icon {
-  color: var(--accent);
-  margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+  color: var(--text);
+  margin-bottom: 16px;
 }
 
-.why-icon svg {
-  width: 30px;
-  height: 30px;
+.why-icon-badge {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .why-point h3 {

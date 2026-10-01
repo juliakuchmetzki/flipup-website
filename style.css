@@ -509,6 +509,19 @@ h1, h2, h3 {
   background: #4752c4;
 }
 
+.pricing-legal-link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.pricing-legal-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* Founder section */
 
 .founder-grid {

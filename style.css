@@ -276,8 +276,8 @@ h1, h2, h3 {
 
 .section-label {
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--accent-ink);
   margin: 0 0 16px;

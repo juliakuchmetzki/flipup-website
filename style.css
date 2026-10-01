@@ -432,32 +432,27 @@ h1, h2, h3 {
 .why-points {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 32px;
 }
 
 .why-point {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 22px 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.why-point:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px -20px rgba(34, 21, 18, 0.25);
-  border-color: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .why-icon {
-  display: inline-block;
-  color: var(--accent);
-  margin-bottom: 16px;
+  width: 40px;
+  height: 40px;
 }
 
 .why-point h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.why-body {
+  border-left: 2px solid var(--accent);
+  padding-left: 18px;
 }
 
 .why-point p {

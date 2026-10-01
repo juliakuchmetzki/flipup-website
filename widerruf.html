@@ -39,6 +39,13 @@
     line-height: 1.7;
   }
   .legal ul { padding-left: 22px; }
+  .legal .meta {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
   .widerruf-form {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -66,6 +73,31 @@
   }
   .widerruf-form textarea { min-height: 70px; resize: vertical; }
   .widerruf-form .button { margin-top: 20px; }
+  .widerruf-confirmation {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-top: 20px;
+  }
+  .widerruf-confirmation.visible { display: block; }
+  .widerruf-confirmation h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  .widerruf-confirmation dl { margin: 16px 0 0; }
+  .widerruf-confirmation dt {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 12px;
+  }
+  .widerruf-confirmation dd {
+    margin: 2px 0 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
 </style>
 </head>
 <body>
@@ -88,37 +120,94 @@
     <div class="container legal">
       <a class="back-link" href="index.html">← Zurück zu FlipUp</a>
       <h1>Widerrufsrecht</h1>
-      <p>Als Verbraucher hast du bei Abschluss der FlipUp-Mitgliedschaft ein gesetzliches Widerrufsrecht.</p>
+      <p>Verbrauchern steht ein Widerrufsrecht nach folgender Maßgabe zu, wobei Verbraucher jede natürliche Person ist, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können.</p>
 
-      <h2>Widerrufsbelehrung</h2>
-      <p>Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.</p>
-      <p>Um dein Widerrufsrecht auszuüben, musst du uns (Johannes Kuchmetzki, Brunnenstr. 28, 10119 Berlin, johanneskuchmetzki@gmail.com) mittels einer eindeutigen Erklärung (z. B. per E-Mail oder über das Formular unten) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest.</p>
+      <h2>A. Widerrufsbelehrung</h2>
+      <p><strong>Widerrufsrecht</strong></p>
+      <p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+      <p>Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.</p>
+      <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Johannes Kuchmetzki, Brunnenstr. 28, 10119 Berlin, Deutschland, Tel.: +491734382485, E-Mail: johanneskuchmetzki@gmail.com) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p>
+      <p>Sie können Ihr Widerrufsrecht auch online auf der Webseite unter der Internetadresse <a href="https://flipupde.de/widerruf.html">https://flipupde.de/widerruf.html</a> ausüben. Wenn Sie diese Online-Funktion nutzen, wird Ihnen auf einem dauerhaften Datenträger (z. B. durch eine E-Mail) unverzüglich eine Eingangsbestätigung mit Informationen zum Inhalt der Widerrufserklärung sowie dem Datum und der Uhrzeit ihres Eingangs übermittelt.</p>
+      <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
 
-      <h2>Folgen des Widerrufs</h2>
-      <p>Wenn du diesen Vertrag widerrufst, erstatten wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag, an dem die Mitteilung über deinen Widerruf bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt hast, sofern nicht ausdrücklich etwas anderes vereinbart wurde.</p>
-      <p>Hast du verlangt, dass die Leistung während der Widerrufsfrist beginnen soll, so hast du uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zum Zeitpunkt deines Widerrufs bereits erbrachten Leistung entspricht.</p>
+      <p><strong>Folgen des Widerrufs</strong></p>
+      <p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.</p>
+      <p>Haben Sie verlangt, dass die Dienstleistungen während der Widerrufsfrist beginnen sollen, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht.</p>
 
-      <h2>Widerruf erklären</h2>
-      <p>Du kannst das untenstehende Muster-Widerrufsformular ausfüllen und direkt per E-Mail an uns senden, musst es aber nicht verwenden.</p>
+      <p><strong>Ausschluss bzw. vorzeitiges Erlöschen des Widerrufsrechts</strong></p>
+      <p>Das Widerrufsrecht erlischt vorzeitig, wenn wir die Dienstleistung vollständig erbracht haben und wir mit der Ausführung der Dienstleistung erst begonnen haben, nachdem Sie dazu Ihre ausdrückliche Zustimmung gegeben haben und gleichzeitig Ihre Kenntnis davon bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung durch uns verlieren.</p>
 
-      <div class="widerruf-form">
-        <p><strong>An:</strong> Johannes Kuchmetzki, Brunnenstr. 28, 10119 Berlin, johanneskuchmetzki@gmail.com</p>
-        <p>Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag über die FlipUp-Mitgliedschaft.</p>
+      <h2>B. Widerruf erklären</h2>
+      <p>Du kannst das untenstehende Muster-Widerrufsformular ausfüllen und direkt per E-Mail an uns senden, musst es aber nicht verwenden. Nach dem Absenden bekommst du auf dieser Seite sofort eine Eingangsbestätigung mit Zeitstempel.</p>
+
+      <form class="widerruf-form" id="widerruf-form">
+        <p><strong>An:</strong> Johannes Kuchmetzki, Brunnenstr. 28, 10119 Berlin, Deutschland, johanneskuchmetzki@gmail.com</p>
+        <p>Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung: FlipUp-Mitgliedschaft.</p>
 
         <label for="wf-ordered">Bestellt am</label>
-        <input type="date" id="wf-ordered">
+        <input type="date" id="wf-ordered" required>
 
         <label for="wf-name">Name des/der Verbraucher(s)</label>
-        <input type="text" id="wf-name" placeholder="Vor- und Nachname">
+        <input type="text" id="wf-name" placeholder="Vor- und Nachname" required>
 
-        <label for="wf-email">E-Mail-Adresse (für die Rückmeldung)</label>
-        <input type="email" id="wf-email" placeholder="deine@email.de">
+        <label for="wf-address">Anschrift des/der Verbraucher(s)</label>
+        <input type="text" id="wf-address" placeholder="Straße, PLZ, Ort" required>
+
+        <label for="wf-email">E-Mail-Adresse (für die Eingangsbestätigung)</label>
+        <input type="email" id="wf-email" placeholder="deine@email.de" required>
 
         <label for="wf-note">Anmerkung (optional)</label>
         <textarea id="wf-note" placeholder="z. B. Zahlungs-E-Mail bei Stripe, falls abweichend"></textarea>
 
-        <a class="button button-block" id="wf-send" href="#">Widerruf jetzt per E-Mail senden</a>
+        <button type="submit" class="button button-block">Widerruf jetzt erklären</button>
+      </form>
+
+      <div class="widerruf-confirmation" id="widerruf-confirmation">
+        <h2>Eingangsbestätigung</h2>
+        <p>Deine Widerrufserklärung wurde mit folgendem Inhalt und Zeitstempel erfasst. Ein E-Mail-Entwurf mit demselben Inhalt wurde geöffnet, bitte sende ihn ab, damit uns dein Widerruf zusätzlich per E-Mail erreicht.</p>
+        <dl>
+          <dt>Bestellt am</dt>
+          <dd id="conf-ordered"></dd>
+          <dt>Name</dt>
+          <dd id="conf-name"></dd>
+          <dt>Anschrift</dt>
+          <dd id="conf-address"></dd>
+          <dt>E-Mail</dt>
+          <dd id="conf-email"></dd>
+          <dt>Anmerkung</dt>
+          <dd id="conf-note"></dd>
+          <dt>Datum und Uhrzeit des Eingangs</dt>
+          <dd id="conf-timestamp"></dd>
+        </dl>
       </div>
+
+      <h2>C. Muster-Widerrufsformular</h2>
+      <p>Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.</p>
+      <p>
+        An<br>
+        Johannes Kuchmetzki<br>
+        Brunnenstr. 28<br>
+        10119 Berlin<br>
+        Deutschland<br>
+        E-Mail: johanneskuchmetzki@gmail.com
+      </p>
+      <p>
+        Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*) / die Erbringung der folgenden Dienstleistung (*)<br>
+        _______________________________________________________<br>
+        _______________________________________________________<br>
+        Bestellt am (*) ____________ / erhalten am (*) __________________<br>
+        ________________________________________________________<br>
+        Name des/der Verbraucher(s)<br>
+        ________________________________________________________<br>
+        Anschrift des/der Verbraucher(s)<br>
+        ________________________________________________________<br>
+        Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)<br>
+        _________________________<br>
+        Datum<br>
+        (*) Unzutreffendes streichen
+      </p>
+
+      <p class="meta">Copyright-Hinweis: Diese Widerrufsbelehrung wurde von den Fachanwälten der IT-Recht Kanzlei erstellt und ist urheberrechtlich geschützt (<a href="https://www.it-recht-kanzlei.de">it-recht-kanzlei.de</a>).<br>Stand: 01.10.2026</p>
     </div>
   </main>
 
@@ -130,24 +219,37 @@
   </footer>
 
   <script>
-    function buildMailto() {
-      var ordered = document.getElementById('wf-ordered').value || '____________';
-      var name = document.getElementById('wf-name').value || '____________';
-      var email = document.getElementById('wf-email').value || '____________';
+    document.getElementById('widerruf-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var ordered = document.getElementById('wf-ordered').value;
+      var name = document.getElementById('wf-name').value;
+      var address = document.getElementById('wf-address').value;
+      var email = document.getElementById('wf-email').value;
       var note = document.getElementById('wf-note').value;
+      var timestamp = new Date().toLocaleString('de-DE');
+
+      document.getElementById('conf-ordered').textContent = ordered;
+      document.getElementById('conf-name').textContent = name;
+      document.getElementById('conf-address').textContent = address;
+      document.getElementById('conf-email').textContent = email;
+      document.getElementById('conf-note').textContent = note || '–';
+      document.getElementById('conf-timestamp').textContent = timestamp;
+
+      var confirmation = document.getElementById('widerruf-confirmation');
+      confirmation.classList.add('visible');
+      confirmation.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
       var body =
-        'Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die FlipUp-Mitgliedschaft.\n\n' +
+        'Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung: FlipUp-Mitgliedschaft.\n\n' +
         'Bestellt am: ' + ordered + '\n' +
         'Name: ' + name + '\n' +
+        'Anschrift: ' + address + '\n' +
         'E-Mail: ' + email +
         (note ? ('\nAnmerkung: ' + note) : '') +
-        '\n\nDatum: ' + new Date().toLocaleDateString('de-DE');
-      return 'mailto:johanneskuchmetzki@gmail.com?subject=' + encodeURIComponent('Widerruf FlipUp-Mitgliedschaft') + '&body=' + encodeURIComponent(body);
-    }
-    var sendLink = document.getElementById('wf-send');
-    sendLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.location.href = buildMailto();
+        '\n\nEingegangen am: ' + timestamp;
+
+      window.location.href = 'mailto:johanneskuchmetzki@gmail.com?subject=' + encodeURIComponent('Widerruf FlipUp-Mitgliedschaft') + '&body=' + encodeURIComponent(body);
     });
   </script>
 

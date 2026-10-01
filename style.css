@@ -113,7 +113,6 @@ h1, h2, h3 {
   top: 0;
   background: rgba(251, 247, 245, 0.9);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
   z-index: 20;
 }
 
@@ -422,24 +421,9 @@ h1, h2, h3 {
 }
 
 .why-icon {
-  position: relative;
   display: inline-block;
-  color: var(--text);
+  color: var(--accent);
   margin-bottom: 16px;
-}
-
-.why-icon-badge {
-  position: absolute;
-  right: -5px;
-  bottom: -5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .why-point h3 {
@@ -683,12 +667,18 @@ h1, h2, h3 {
 
 /* FAQ */
 
+.faq {
+  text-align: center;
+}
+
 .faq h2 {
   font-size: clamp(1.7rem, 3.2vw, 2.2rem);
   margin: 14px 0 32px;
 }
 
 .faq-list {
+  margin: 0 auto;
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 12px;

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertrag kündigen – FlipUp</title>
+<meta name="description" content="FlipUp-Mitgliedschaft direkt online kündigen.">
+<link rel="canonical" href="https://flipupde.de/kuendigen.html">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180.png">
+<link rel="stylesheet" href="style.css?v=5">
+<style>
+  .legal {
+    padding: 64px 0 96px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .legal h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    margin-bottom: 8px;
+  }
+  .legal .back-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  .legal .back-link:hover { color: var(--accent-ink); }
+  .legal h2 {
+    font-size: 1.25rem;
+    margin: 40px 0 14px;
+  }
+  .legal p, .legal li {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+  .kuendigen-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-top: 20px;
+  }
+  .kuendigen-form p { margin: 0 0 10px; }
+  .kuendigen-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 16px 0 6px;
+  }
+  .kuendigen-form input, .kuendigen-form select, .kuendigen-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-family: inherit;
+    font-size: 0.92rem;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .kuendigen-form textarea { min-height: 70px; resize: vertical; }
+  .kuendigen-form .button { margin-top: 20px; }
+  .kuendigen-required { color: var(--accent-ink); }
+  .kuendigen-confirmation {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-top: 20px;
+  }
+  .kuendigen-confirmation.visible { display: block; }
+  .kuendigen-confirmation h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  .kuendigen-confirmation dl {
+    margin: 16px 0 0;
+  }
+  .kuendigen-confirmation dt {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 12px;
+  }
+  .kuendigen-confirmation dd {
+    margin: 2px 0 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+</style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/logo.png" alt="FlipUp Logo" class="brand-logo">
+        FlipUp
+      </a>
+      <nav>
+        <a href="index.html#pricing">Preis</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="button button-nav" href="kuendigen.html">Verträge hier kündigen</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container legal">
+      <a class="back-link" href="index.html">← Zurück zu FlipUp</a>
+      <h1>Vertrag kündigen</h1>
+      <p>Hier kannst du deine FlipUp-Mitgliedschaft direkt kündigen. Die Mitgliedschaft läuft monatlich und lässt sich jederzeit ohne Frist zum Ende des laufenden Abrechnungsmonats kündigen.</p>
+
+      <h2>Kündigung erklären</h2>
+      <p>Fülle das Formular aus und sende deine Kündigung ab. Du bekommst direkt auf dieser Seite eine Bestätigung mit Inhalt und Zeitpunkt deiner Kündigung, zusätzlich wird eine E-Mail mit deiner Kündigungserklärung vorbereitet.</p>
+
+      <form class="kuendigen-form" id="kuendigen-form">
+        <p><strong>An:</strong> Johannes Kuchmetzki, Brunnenstr. 28, 10119 Berlin, johanneskuchmetzki@gmail.com</p>
+
+        <label for="kf-type">Art der Kündigung <span class="kuendigen-required">*</span></label>
+        <select id="kf-type" required>
+          <option value="ordentlich">Ordentliche Kündigung (zum nächstmöglichen Termin)</option>
+          <option value="ausserordentlich">Außerordentliche Kündigung (aus wichtigem Grund)</option>
+        </select>
+
+        <label for="kf-name">Name <span class="kuendigen-required">*</span></label>
+        <input type="text" id="kf-name" placeholder="Vor- und Nachname" required>
+
+        <label for="kf-email">E-Mail-Adresse, mit der du Mitglied geworden bist <span class="kuendigen-required">*</span></label>
+        <input type="email" id="kf-email" placeholder="deine@email.de" required>
+
+        <label for="kf-date">Gewünschter Kündigungstermin (optional)</label>
+        <input type="date" id="kf-date">
+
+        <label for="kf-note">Anmerkung (optional)</label>
+        <textarea id="kf-note" placeholder="z. B. Grund der außerordentlichen Kündigung"></textarea>
+
+        <button type="submit" class="button button-block">Jetzt kündigen</button>
+      </form>
+
+      <div class="kuendigen-confirmation" id="kuendigen-confirmation">
+        <h2>Deine Kündigung wurde erfasst</h2>
+        <p>Die folgende Erklärung wurde mit Zeitstempel protokolliert. Ein E-Mail-Entwurf mit demselben Inhalt wurde geöffnet, bitte sende ihn ab, damit uns deine Kündigung zusätzlich per E-Mail erreicht.</p>
+        <dl>
+          <dt>Art der Kündigung</dt>
+          <dd id="conf-type"></dd>
+          <dt>Name</dt>
+          <dd id="conf-name"></dd>
+          <dt>E-Mail</dt>
+          <dd id="conf-email"></dd>
+          <dt>Gewünschter Kündigungstermin</dt>
+          <dd id="conf-date"></dd>
+          <dt>Anmerkung</dt>
+          <dd id="conf-note"></dd>
+          <dt>Zeitpunkt der Erklärung</dt>
+          <dd id="conf-timestamp"></dd>
+        </dl>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 FlipUp, ein Projekt von Johannes Kuchmetzki</span>
+      <span><a href="https://johanneskuchmetzki.de/impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="agb.html">AGB</a> · <a href="widerruf.html">Widerruf</a> · <a href="kuendigen.html">Verträge hier kündigen</a></span>
+    </div>
+  </footer>
+
+  <script>
+    var typeLabels = {
+      ordentlich: 'Ordentliche Kündigung (zum nächstmöglichen Termin)',
+      ausserordentlich: 'Außerordentliche Kündigung (aus wichtigem Grund)'
+    };
+
+    document.getElementById('kuendigen-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var type = document.getElementById('kf-type').value;
+      var name = document.getElementById('kf-name').value;
+      var email = document.getElementById('kf-email').value;
+      var date = document.getElementById('kf-date').value;
+      var note = document.getElementById('kf-note').value;
+      var timestamp = new Date().toLocaleString('de-DE');
+
+      document.getElementById('conf-type').textContent = typeLabels[type];
+      document.getElementById('conf-name').textContent = name;
+      document.getElementById('conf-email').textContent = email;
+      document.getElementById('conf-date').textContent = date || 'Nächstmöglicher Termin';
+      document.getElementById('conf-note').textContent = note || '–';
+      document.getElementById('conf-timestamp').textContent = timestamp;
+
+      var confirmation = document.getElementById('kuendigen-confirmation');
+      confirmation.classList.add('visible');
+      confirmation.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      var body =
+        'Hiermit kündige ich meine FlipUp-Mitgliedschaft.\n\n' +
+        'Art der Kündigung: ' + typeLabels[type] + '\n' +
+        'Name: ' + name + '\n' +
+        'E-Mail: ' + email + '\n' +
+        'Gewünschter Kündigungstermin: ' + (date || 'nächstmöglicher Termin') +
+        (note ? ('\nAnmerkung: ' + note) : '') +
+        '\n\nErklärt am: ' + timestamp;
+
+      window.location.href = 'mailto:johanneskuchmetzki@gmail.com?subject=' + encodeURIComponent('Kündigung FlipUp-Mitgliedschaft') + '&body=' + encodeURIComponent(body);
+    });
+  </script>
+
+</body>
+</html>

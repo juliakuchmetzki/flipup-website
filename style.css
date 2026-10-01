@@ -510,15 +510,17 @@ h1, h2, h3 {
 }
 
 .pricing-legal-link {
-  display: block;
   text-align: center;
-  margin-top: 14px;
+  margin: 14px 0 0;
   font-size: 0.8rem;
+}
+
+.pricing-legal-link a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: underline;
 }
 
-.pricing-legal-link:hover {
+.pricing-legal-link a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 

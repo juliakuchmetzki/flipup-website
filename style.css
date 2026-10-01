@@ -112,22 +112,35 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 20;
-  padding: 16px 20px 0;
+  padding: 0;
+  transition: padding 0.25s ease;
+}
+
+.nav.scrolled {
+  padding: 12px 20px 0;
 }
 
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 16px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  box-shadow: none;
+  transition: padding 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nav.scrolled .nav-inner {
+  padding: 8px 20px;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 999px;
+  border-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 10px 30px -14px rgba(34, 21, 18, 0.25);
 }
 
@@ -163,6 +176,12 @@ h1, h2, h3 {
 .button-nav {
   padding: 9px 18px;
   font-size: 0.88rem;
+  transition: padding 0.25s ease, font-size 0.25s ease;
+}
+
+.nav.scrolled .button-nav {
+  padding: 7px 15px;
+  font-size: 0.82rem;
 }
 
 /* Buttons */

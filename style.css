@@ -343,10 +343,14 @@ h1, h2, h3 {
   margin: 0 auto 48px;
 }
 
+.how {
+  text-align: center;
+}
+
 .how h2 {
   font-size: clamp(1.7rem, 3.2vw, 2.4rem);
   max-width: 640px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 
 .lede {
@@ -362,6 +366,8 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 0;
   max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .timeline-item {
@@ -415,7 +421,7 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: center;
 }
 
 .why h2 {

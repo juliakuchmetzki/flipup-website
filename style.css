@@ -437,19 +437,24 @@ h1, h2, h3 {
 
 .why-point {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .why-icon {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
 }
 
 .why-point h3 {
   font-size: 1.05rem;
-  margin-bottom: 6px;
 }
 
 .why-body {
